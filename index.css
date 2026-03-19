@@ -1,0 +1,16 @@
+/* src/index.css */
+@import "tailwindcss";
+
+@theme {
+  --color-neon-orange: #FF5F1F;
+  --color-deep-black: #050505;
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl;
+  }
+  .neon-glow {
+    box-shadow: 0 0 15px rgba(255, 95, 31, 0.3);
+  }
+}
